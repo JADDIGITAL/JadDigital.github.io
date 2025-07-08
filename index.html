@@ -1,97 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jad Digital - منتجات رقمية</title>
-<style>
-  body {
-    font-family: Tahoma, sans-serif;
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-  }
-  header {
-    padding: 40px 20px 20px;
-  }
-  h1 {
-    color: #00ffd5;
-    font-size: 3em;
-    margin-bottom: 0;
-  }
-  .products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-  }
-  .product-card {
-    background: #1b2a38;
-    border-radius: 12px;
-    width: 300px;
-    padding: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .product-card img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  .product-title {
-    margin: 15px 0 10px;
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-  .product-desc {
-    font-size: 1em;
-    color: #aad4d8;
-    min-height: 60px;
-  }
-  .buy-button {
-    margin-top: auto;
-    padding: 12px 30px;
-    background-color: #00c9a7;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s;
-  }
-  .buy-button:hover {
-    background-color: #009f86;
-  }
-  @media(max-width: 650px) {
-    .products {
-      flex-direction: column;
-      align-items: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل المنتجات الرقمية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
     }
-  }
-</style>
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #1e1e2f;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    img.cover {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+    .highlight {
+      color: #ffd700;
+    }
+    ul {
+      text-align: right;
+      margin-top: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #00ffd5;
+      color: #000;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #00c2a5;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <img src="cover.webp" alt="غلاف الدليل" class="cover">
+    <h1>🎁 دليل التدريب الشامل للربح من <span class="highlight">المنتجات الرقمية</span></h1>
+    <p>هل تريد أن تبدأ رحلتك في عالم المنتجات الرقمية وتحقق دخلاً حقيقياً من الإنترنت؟ هذا الدليل هو فرصتك الذهبية!</p>
 
-<header>
-  <h1>Jad Digital</h1>
-  <p>اكتشف منتجاتنا الرقمية المميزة، كتب، فيديوهات، ملصقات، وأكثر.</p>
-</header>
+    <ul>
+      <li>✓ شرح شامل لأنواع المنتجات الرقمية (كتب، كورسات، قوالب، أدوات...)</li>
+      <li>✓ خطوات عملية لإنشاء منتجك الرقمي الأول</li>
+      <li>✓ أفضل المنصات والمتاجر لعرض وبيع منتجاتك</li>
+      <li>✓ استراتيجيات تسويقية لزيادة المبيعات</li>
+      <li>✓ أسرار اختيار الفكرة المناسبة بناءً على مهاراتك</li>
+      <li>✓ أدوات مجانية ومدفوعة لإنشاء منتج احترافي</li>
+      <li>✓ تسعير ذكي + منصات عربية وعالمية للبيع</li>
+      <li>✓ كل ما تحتاجه لتبدأ وتربح بثقة</li>
+    </ul>
 
-<section class="products">
+    <p><strong>🎉 الدليل مجاني بالكامل ولفترة محدودة فقط!</strong></p>
 
-  <!-- بطاقة منتج مجاني -->
-  <article class="product-card">
-    <img src="https://cdn.gumroad.com/res/gumroad/products/ja/thumb.jpg" alt="JA Product Image" />
-    <h2 class="product-title">منتج JA المجاني</h2>
-    <p class="product-desc">هذا المنتج مجاني 100% ويمكنك تحميله مباشرة عبر Gumroad.</p>
-    <a href="https://jaddigital.gumroad.com/l/JA" class="buy-button" target="_blank" rel="noopener">تحميل مجاني</a>
-  </article>
-
-</section>
-
+    <a href="https://jaddigital.gumroad.com/l/JA" class="btn">📩 تحميل الدليل مجانًا</a>
+  </div>
 </body>
 </html>
