@@ -1,86 +1,307 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دليل المنتجات الرقمية</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background-color: #1e1e2f;
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-    img.cover {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      color: #00ffd5;
-      margin-bottom: 10px;
-    }
-    .highlight {
-      color: #ffd700;
-    }
-    ul {
-      text-align: right;
-      margin-top: 20px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      background-color: #00ffd5;
-      color: #000;
-      padding: 15px 25px;
-      border: none;
-      border-radius: 10px;
-      font-size: 18px;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .btn:hover {
-      background-color: #00c2a5;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر جاد الرقمي | Jad Digital Store</title>
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --secondary: #2D3748;
+            --light-bg: #F7FAFC;
+        }
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), #8E54E9);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .price {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .free-badge {
+            background: #2EA44F;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .btn {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #5a52e0;
+        }
+        .btn-details {
+            background: #E2E8F0;
+            color: var(--secondary);
+            border: 1px solid #CBD5E0;
+        }
+        .btn-details:hover {
+            background: #CBD5E0;
+        }
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .category-tab {
+            padding: 8px 20px;
+            background: #EDF2F7;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .category-tab.active {
+            background: var(--primary);
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="cover.webp" alt="غلاف الدليل" class="cover">
-    <h1>🎁 دليل التدريب الشامل للربح من <span class="highlight">المنتجات الرقمية</span></h1>
-    <p>هل تريد أن تبدأ رحلتك في عالم المنتجات الرقمية وتحقق دخلاً حقيقياً من الإنترنت؟ هذا الدليل هو فرصتك الذهبية!</p>
+    <header>
+        <h1>🚀 متجر جاد الرقمي</h1>
+        <p>منتجات رقمية عالية الجودة - تحميل فوري</p>
+    </header>
 
-    <ul>
-      <li>✓ شرح شامل لأنواع المنتجات الرقمية (كتب، كورسات، قوالب، أدوات...)</li>
-      <li>✓ خطوات عملية لإنشاء منتجك الرقمي الأول</li>
-      <li>✓ أفضل المنصات والمتاجر لعرض وبيع منتجاتك</li>
-      <li>✓ استراتيجيات تسويقية لزيادة المبيعات</li>
-      <li>✓ أسرار اختيار الفكرة المناسبة بناءً على مهاراتك</li>
-      <li>✓ أدوات مجانية ومدفوعة لإنشاء منتج احترافي</li>
-      <li>✓ تسعير ذكي + منصات عربية وعالمية للبيع</li>
-      <li>✓ كل ما تحتاجه لتبدأ وتربح بثقة</li>
-    </ul>
+    <div class="category-tabs">
+        <div class="category-tab active" data-category="الكل">الكل</div>
+        <div class="category-tab" data-category="كتب ودلائل">كتب ودلائل</div>
+        <div class="category-tab" data-category="قوالب">قوالب</div>
+        <div class="category-tab" data-category="أدوات ويب">أدوات ويب</div>
+    </div>
 
-    <p><strong>🎉 الدليل مجاني بالكامل ولفترة محدودة فقط!</strong></p>
+    <div class="product-grid">
+        <!-- المنتج 1 -->
+        <div class="product-card" data-category="كتب ودلائل">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/02nzjdmg7sibk3m07n0tq9i7mzl0');"></div>
+            <div class="product-info">
+                <h3>الدليل الشامل للمنتجات الرقمية</h3>
+                <p>🚀 ابدأ رحلتك نحو دخل رقمي مستمر من اليوم!</p>
+                <div class="price">$13.99</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/DigitalProducts" class="btn btn-primary">🛒 شراء الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/DigitalProducts" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
 
-    <a href="https://jaddigital.gumroad.com/l/JA" class="btn">📩 تحميل الدليل مجانًا</a>
-  </div>
+        <!-- المنتج 2 -->
+        <div class="product-card" data-category="قوالب">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/dumbe439b86rndy4xgk0tjpb3nxq');"></div>
+            <div class="product-info">
+                <h3>Adorable Bird Sticker Collection</h3>
+                <p>ملصقات طيور عالية الجودة بتنسيق JPG & PNG</p>
+                <div class="price">$1.49</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/BirdSticker" class="btn btn-primary">🛒 شراء الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/BirdSticker" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 3 -->
+        <div class="product-card" data-category="كتب ودلائل">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/jqkcwnw8h71blqvjdiyxpwhu9xyt');"></div>
+            <div class="product-info">
+                <h3>Free Coloring Book for Kids</h3>
+                <p>كتاب تلوين مجاني للأطفال - إصدار الفواكه</p>
+                <div class="price free-badge">مجاني</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/ColoringBookforKids" class="btn btn-primary">⬇️ تحميل الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/ColoringBookforKids" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 4 -->
+        <div class="product-card" data-category="كتب ودلائل">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/l6hoedao4ec56foqz0zwrx9rxhvw');"></div>
+            <div class="product-info">
+                <h3>Free Coloring Book for Kids</h3>
+                <p>كتاب تلوين مجاني - إصدار الحيوانات</p>
+                <div class="price free-badge">مجاني</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/ColoringBook" class="btn btn-primary">⬇️ تحميل الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/ColoringBook" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 5 -->
+        <div class="product-card" data-category="أدوات ويب">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/zzg6s13j5mzszoxvei15h9m937xg');"></div>
+            <div class="product-info">
+                <h3>مفكرة الإنجاز اليومي</h3>
+                <p>تطبيق ويب لتدوين النجاحات وتتبع التقدم</p>
+                <div class="price">$1.49</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/Achievement" class="btn btn-primary">🛒 شراء الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/Achievement" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 6 -->
+        <div class="product-card" data-category="كتب ودلائل">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/1nsiv2ny58tku322msjdhkar26k9');"></div>
+            <div class="product-info">
+                <h3>Magical Coloring Adventures</h3>
+                <p>حزمة تلوين موسمية (4 كتب في واحد)</p>
+                <div class="price">$3.49</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/MagicalColoring" class="btn btn-primary">🛒 شراء الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/MagicalColoring" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 7 -->
+        <div class="product-card" data-category="أدوات ويب">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/oas3cxca0j4w4ntjtkvvk4n01qrv');"></div>
+            <div class="product-info">
+                <h3>مذكرة العادات اليومية</h3>
+                <p>أداة ويب لبناء عادات ناجحة</p>
+                <div class="price">$1.99</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/DailyHabits" class="btn btn-primary">🛒 شراء الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/DailyHabits" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 8 -->
+        <div class="product-card" data-category="قوالب">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/o0a3lxf9kfx7azigoshtw47zwdwa');"></div>
+            <div class="product-info">
+                <h3>Design Templates</h3>
+                <p>قوالب كانفا للدفاتر الحلزونية</p>
+                <div class="price">$1.50</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/DesignTemplates" class="btn btn-primary">🛒 شراء الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/DesignTemplates" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 9 -->
+        <div class="product-card" data-category="كتب ودلائل">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/bs0vr5u4kqre01rc35l4zr287vv8');"></div>
+            <div class="product-info">
+                <h3>Sail of Thoughts Notebook</h3>
+                <p>دفتر ملاحظات إلهامي (50 صفحة)</p>
+                <div class="price">$2.70</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/SailThoughtsNotebook" class="btn btn-primary">🛒 شراء الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/SailThoughtsNotebook" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 10 -->
+        <div class="product-card" data-category="قوالب">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/f8szl3r5sz1wpwe1gn7uou8tgpny');"></div>
+            <div class="product-info">
+                <h3>Caricature Design for Photoshop</h3>
+                <p>مجموعة PNG لتصاميم الكاريكاتير</p>
+                <div class="price">$3.00</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/PNGCollection" class="btn btn-primary">🛒 شراء الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/PNGCollection" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- المنتج 11 -->
+        <div class="product-card" data-category="كتب ودلائل">
+            <div class="product-image" style="background-image: url('https://public-files.gumroad.com/1u8ce032hg03fepae3kjdq44xld3');"></div>
+            <div class="product-info">
+                <h3>دليل الربح من المنتجات الرقمية</h3>
+                <p>دليل مجاني شامل للتدريب</p>
+                <div class="price free-badge">مجاني</div>
+                <div class="buttons">
+                    <a href="https://jaddigital.gumroad.com/l/JA" class="btn btn-primary">⬇️ تحميل الآن</a>
+                    <a href="https://jaddigital.gumroad.com/l/JA" class="btn btn-details">🔍 تفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // تصفية المنتجات حسب الفئة
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                const category = tab.dataset.category;
+                const products = document.querySelectorAll('.product-card');
+                
+                products.forEach(product => {
+                    if (category === 'الكل' || product.dataset.category === category) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
